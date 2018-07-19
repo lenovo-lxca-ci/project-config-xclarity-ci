@@ -1,8 +1,8 @@
 # See parameter documentation inside ../manifests/single_node_ci.pp
 # Fields commented out have reasonable default values
 
-#vhost_name:
-project_config_repo: http://your-project-config-repo.example.com/project-config-example.git
+vhost_name: lenovo_lxca_ci_node
+project_config_repo: https://github.com/lenovo-lxca-ci/project-config-xclarity.git
 #serveradmin:
 # Jenkins version 1.651 is the last known version to work out of the box with
 # zuul. However, it has numerous security vulnerabilities, and should only
@@ -11,14 +11,39 @@ project_config_repo: http://your-project-config-repo.example.com/project-config-
 # see SECURITY-170 in:
 # "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2016-05-11"
 #jenkins_version: present
+jenkins_version: 1.651
 #jenkins_vhost_name: jenkins
 #jenkins_username: jenkins
 #jenkins_password:
 jenkins_ssh_private_key: |
   -----BEGIN RSA PRIVATE KEY-----
-  Insert jenkins private key here
+  MIIEpAIBAAKCAQEA7C4qPkoKQ32iP816nQkXTQYd3YzP8UFVIV7VrOFBuY04U/UO
+  MwVXHK39WAx/dAG0ahyhgIDxHL4tnFuX9bZXo33Bc8rtRl89youmkEnCdUeYt4v7
+  YKpii5ME/EuLz97WRyfPGJVXUmNHw4BP09kGWYTNyxu3pAx6Z2xN1PShfDkaQOjx
+  6O8KdrjFURsh6B9jUQiR116SprcHWXlCQc2oYCP9SRxjHoRyUQAOuKjNdWV2g7AI
+  +YxVMtRWdnE0EgWu3ocr1EKGS4/0lcWQczxzqtjd0m+eVkl9JIq8miDeP60p2tBw
+  Y9G0P4vVkdQOgyKi0ih6eSMW7suDR9kLqKye+QIDAQABAoIBADC/ipqWv62UheOz
+  bsZw9O1CAPIUuWrreD3ODD6FtAIvgtvZbdfcF1HlG7CLy9bO70UjqbYTZzDulA18
+  3k2qGEa3kzFqRjVLPT7MOlH313pLj9r6uqUGJhb2/oVwtmfub736GoXRdVedBFf2
+  6QMp/WSGw89TZkEnDjDAqwP0hkxUO2mP2kCAFoJKjBRPEg+VOKsErWGTRnTr3PeD
+  GvHZPbLl8ewv20oYUjoe5Kvl//NToKpipmDXxsoxXaY2Y8JlUqEQgzbq8fqjILnH
+  X8l+TN15MFkuA2SU5geIZJ9mBzA2xnYvzYYl9hcMP7Dga7iz4ga46vqu5twgHI+P
+  FPOic/0CgYEA/RVsBUf4GxQhwWeclMFj7jwS2qXT7SAwCnu1K+3Nb40jBtJfCKzE
+  6DYzuUnmLryMDzjmeqXr9b35Mf5mG2Y8NLw5jeE6d3r+QXiGn2B4BCaxDo0kPX8l
+  UrA5lFlz7w/rtI2D9q4bheJPlUqDe+S8J0T64kYwCXOACpMD8Q0gt7sCgYEA7ubh
+  IuY5XLB8DxSkCPdIGqJcmpfIE69S45gZ7EIrfkuyKXbqBsb+iPrP/X3ZioquEKvx
+  YP3ftAiLbtCTBF5TMdUuQLdR2U1qhI9rT3SSFojd6RPa7vAUPP4o2AOcXR4xoiyS
+  fCIWKi574dvbF94+Acad67REWDw8o+F7yWLqNtsCgYEAo5fEUomZ9A8IXtdV3MZB
+  jU6htVo56m7C/xPGIZY/FFt8B73Wlmnvglb/CkedlhpkwrY6LY+xPhFF0q4qXI2y
+  XzhIT9EGFROY5MM+6ijWi4BjNQ/BHEti2dd18NH94cs9xmEvqzYSLnIClXMsGNrb
+  UNsC/V73UDSr0KoFgzzEKF8CgYATpA+mWt8ka64HX18NDadz6R1L6Gael69s3rhi
+  4B3LSFXhatFatUl/4X7wDESySyx8WmaB3t1hY8Jy3dr4ZPjaA/jFgUzNXLwBIflk
+  kuTfzWjRHLzHIB3J1etttv5H+Y+DEb8JTZQc661rqDOfBrp6UuXw1uU3i9xAbO1M
+  ZUF0OQKBgQDpq4/kbdnUBtgcryRNEWrP/kItgoJxY2cySptuibFauLdZQSPz9j0y
+  q8yo2phd6dRxkowxp1O/YgcXsuvvbJTUzv6l9y54VTzJHTvdO7cfvbukIuqzBQOw
+  7b5MFXFp1kJHVYbnXpgXQovML5+pP6gvyocK7AMzkcUNmygx/1UTlg==
   -----END RSA PRIVATE KEY-----
-jenkins_ssh_public_key:  your-jenkins-public-key-no-whitespace
+jenkins_ssh_public_key: AAAAB3NzaC1yc2EAAAADAQABAAABAQDsLio+SgpDfaI/zXqdCRdNBh3djM/xQVUhXtWs4UG5jThT9Q4zBVccrf1YDH90AbRqHKGAgPEcvi2cW5f1tlejfcFzyu1GXz3Ki6aQScJ1R5i3i/tgqmKLkwT8S4vP3tZHJ88YlVdSY0fDgE/T2QZZhM3LG7ekDHpnbE3U9KF8ORpA6PHo7wp2uMVRGyHoH2NRCJHXXpKmtwdZeUJBzahgI/1JHGMehHJRAA64qM11ZXaDsAj5jFUy1FZ2cTQSBa7ehyvUQoZLj/SVxZBzPHOq2N3Sb55WSX0kiryaIN4/rSna0HBj0bQ/i9WR1A6DIqLSKHp5Ixbuy4NH2QuorJ75 
 jjb_git_revision: 1.6.2
 #java_args_override: |
    # These are the arguments to pass to Java
@@ -26,32 +51,56 @@ jjb_git_revision: 1.6.2
    # "-Xloggc:/var/log/jenkins/gc.log -XX:+PrintGCDetails -Xmx12g -Dorg.kohsuke.stapler.compression.CompressionFilter.disabled=true -Djava.util.logging.config.file=/var/lib/jenkins/logger.conf -Dhudson.model.ParametersAction.keepUndefinedParameters=true"
    # Please note that using the parameter: keepUndefinedParameters=true is not secure and exposes a potential jenkins security vulnerability
 #jjb_git_url: https://git.openstack.org/openstack-infra/jenkins-job-builder
-#gerrit_server: review.openstack.org
+gerrit_server: review.openstack.org
 #gerrit_ssh_host_key:
-gerrit_user: your-gerrit-user
+gerrit_user: lenovo_lxca_ci
 gerrit_user_ssh_private_key: |
   -----BEGIN RSA PRIVATE KEY-----
-  Insert gerrit private key here
+  MIIEpAIBAAKCAQEA7C4qPkoKQ32iP816nQkXTQYd3YzP8UFVIV7VrOFBuY04U/UO
+  MwVXHK39WAx/dAG0ahyhgIDxHL4tnFuX9bZXo33Bc8rtRl89youmkEnCdUeYt4v7
+  YKpii5ME/EuLz97WRyfPGJVXUmNHw4BP09kGWYTNyxu3pAx6Z2xN1PShfDkaQOjx
+  6O8KdrjFURsh6B9jUQiR116SprcHWXlCQc2oYCP9SRxjHoRyUQAOuKjNdWV2g7AI
+  +YxVMtRWdnE0EgWu3ocr1EKGS4/0lcWQczxzqtjd0m+eVkl9JIq8miDeP60p2tBw
+  Y9G0P4vVkdQOgyKi0ih6eSMW7suDR9kLqKye+QIDAQABAoIBADC/ipqWv62UheOz
+  bsZw9O1CAPIUuWrreD3ODD6FtAIvgtvZbdfcF1HlG7CLy9bO70UjqbYTZzDulA18
+  3k2qGEa3kzFqRjVLPT7MOlH313pLj9r6uqUGJhb2/oVwtmfub736GoXRdVedBFf2
+  6QMp/WSGw89TZkEnDjDAqwP0hkxUO2mP2kCAFoJKjBRPEg+VOKsErWGTRnTr3PeD
+  GvHZPbLl8ewv20oYUjoe5Kvl//NToKpipmDXxsoxXaY2Y8JlUqEQgzbq8fqjILnH
+  X8l+TN15MFkuA2SU5geIZJ9mBzA2xnYvzYYl9hcMP7Dga7iz4ga46vqu5twgHI+P
+  FPOic/0CgYEA/RVsBUf4GxQhwWeclMFj7jwS2qXT7SAwCnu1K+3Nb40jBtJfCKzE
+  6DYzuUnmLryMDzjmeqXr9b35Mf5mG2Y8NLw5jeE6d3r+QXiGn2B4BCaxDo0kPX8l
+  UrA5lFlz7w/rtI2D9q4bheJPlUqDe+S8J0T64kYwCXOACpMD8Q0gt7sCgYEA7ubh
+  IuY5XLB8DxSkCPdIGqJcmpfIE69S45gZ7EIrfkuyKXbqBsb+iPrP/X3ZioquEKvx
+  YP3ftAiLbtCTBF5TMdUuQLdR2U1qhI9rT3SSFojd6RPa7vAUPP4o2AOcXR4xoiyS
+  fCIWKi574dvbF94+Acad67REWDw8o+F7yWLqNtsCgYEAo5fEUomZ9A8IXtdV3MZB
+  jU6htVo56m7C/xPGIZY/FFt8B73Wlmnvglb/CkedlhpkwrY6LY+xPhFF0q4qXI2y
+  XzhIT9EGFROY5MM+6ijWi4BjNQ/BHEti2dd18NH94cs9xmEvqzYSLnIClXMsGNrb
+  UNsC/V73UDSr0KoFgzzEKF8CgYATpA+mWt8ka64HX18NDadz6R1L6Gael69s3rhi
+  4B3LSFXhatFatUl/4X7wDESySyx8WmaB3t1hY8Jy3dr4ZPjaA/jFgUzNXLwBIflk
+  kuTfzWjRHLzHIB3J1etttv5H+Y+DEb8JTZQc661rqDOfBrp6UuXw1uU3i9xAbO1M
+  ZUF0OQKBgQDpq4/kbdnUBtgcryRNEWrP/kItgoJxY2cySptuibFauLdZQSPz9j0y
+  q8yo2phd6dRxkowxp1O/YgcXsuvvbJTUzv6l9y54VTzJHTvdO7cfvbukIuqzBQOw
+  7b5MFXFp1kJHVYbnXpgXQovML5+pP6gvyocK7AMzkcUNmygx/1UTlg==
   -----END RSA PRIVATE KEY-----
-gerrit_user_ssh_public_key: gerrit-public-key-no-whitespace
-git_email: your-email@example.com
-git_name: Your Name
-log_server: logs.example.com
+gerrit_user_ssh_public_key: AAAAB3NzaC1yc2EAAAADAQABAAABAQDsLio+SgpDfaI/zXqdCRdNBh3djM/xQVUhXtWs4UG5jThT9Q4zBVccrf1YDH90AbRqHKGAgPEcvi2cW5f1tlejfcFzyu1GXz3Ki6aQScJ1R5i3i/tgqmKLkwT8S4vP3tZHJ88YlVdSY0fDgE/T2QZZhM3LG7ekDHpnbE3U9KF8ORpA6PHo7wp2uMVRGyHoH2NRCJHXXpKmtwdZeUJBzahgI/1JHGMehHJRAA64qM11ZXaDsAj5jFUy1FZ2cTQSBa7ehyvUQoZLj/SVxZBzPHOq2N3Sb55WSX0kiryaIN4/rSna0HBj0bQ/i9WR1A6DIqLSKHp5Ixbuy4NH2QuorJ75
+git_email: lenovo.lxca.ci@gmail.com
+git_name: lenovo_lxca_ci
+log_server: lenovo_lxca_ci_log
 #smtp_host:
 #smtp_default_from:
 #smtp_default_to:
 zuul_revision: 2.5.1
-#zuul_git_source_repo: https://git.openstack.org/openstack-infra/zuul
+zuul_git_source_repo: https://git.openstack.org/openstack-infra/zuul
 oscc_file_contents: |
   # Insert OSCC file contents here as explained in the
   # documentation so that nodepool is able to
   # authenticate to your cloud(s)
   #
 
-mysql_root_password: secret_mysql_root_password
-mysql_nodepool_password: secret_mysql_nodepool_password
+mysql_root_password: Passw0rd!123
+mysql_nodepool_password: passw0rd
 #nodepool_jenkins_target: jenkins1
 #jenkins_api_key:
 #jenkins_credentials_id:
 nodepool_revision: 0.3.1
-#nodepool_git_source_repo: https://git.openstack.org/openstack-infra/nodepool
+nodepool_git_source_repo: https://git.openstack.org/openstack-infra/nodepool
