@@ -94,7 +94,7 @@ zuul_git_source_repo: https://git.openstack.org/openstack-infra/zuul
 oscc_file_contents: |
   clouds:
     cloud_183:
-      region_name:
+      region_name: 'US'
       auth:
         username: 'admin'
         password: '7b7a96dd01454439'
