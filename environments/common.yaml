@@ -100,7 +100,7 @@ oscc_file_contents: |
         password: '7b7a96dd01454439'
         project_name: 'admin'
         auth_url: 'http://10.240.24.183:5000/v3'
-        #user-domain-name: 'Default'
+        user-domain-name: 'Default'
         project-domain-name: 'Default'
 
   #('envvars', '', {'auth_type': u'password', u'compute_api_version': u'2', 'key': None, u'database_api_version': u'1.0', u'metering_api_version': u'2', u'network_api_version': u'2', u'message': u'', u'image_format': u'qcow2', 'networks': [], u'image_api_version': u'2', 'verify': True, u'dns_api_version': u'2', u'object_store_api_version': u'1', u'status': u'active', u'container_infra_api_version': u'1', 'region_name': '', 'api_timeout': None, u'baremetal_api_version': u'1', 'auth': {'username': 'admin', 'project_name': 'admin', 'user_domain_name': 'Default', 'auth_url': 'http://10.240.24.183:5000/v3', 'password': '7b7a96dd01454439', 'project_domain_name': 'Default'}, u'image_api_use_tasks': False, u'floating_ip_source': u'neutron', u'orchestration_api_version': u'1', 'cacert': None, u'application_catalog_api_version': u'1', u'key_manager_api_version': u'v1', u'workflow_api_version': u'2', u'identity_api_version': '3', u'volume_api_version': u'2', 'cert': None, u'secgroup_source': u'neutron', u'container_api_version': u'1', u'interface': u'public', u'disable_vendor_agent': {}})
