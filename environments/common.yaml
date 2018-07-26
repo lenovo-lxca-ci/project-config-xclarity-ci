@@ -108,7 +108,7 @@ oscc_file_contents: |
 
 mysql_root_password: Passw0rd!123
 mysql_nodepool_password: passw0rd
-#nodepool_jenkins_target: jenkins1
+nodepool_jenkins_target: jenkins1
 #jenkins_api_key:
 #jenkins_credentials_id:
 nodepool_revision: 0.3.1
