@@ -97,7 +97,8 @@ oscc_file_contents: |
       region_name: 'RegionOne'
       auth:
         username: 'admin'
-        password: '7b7a96dd01454439'
+        #password: '7b7a96dd01454439'
+        password: '64ec9b5a24c7479e'
         project_name: 'admin'
         auth_url: 'http://10.240.24.183:5000/v3'
         user-domain-name: 'Default'
