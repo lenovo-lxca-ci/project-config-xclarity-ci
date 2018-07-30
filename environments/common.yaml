@@ -89,7 +89,7 @@ log_server: lenovo_lxca_ci_log
 #smtp_host:
 #smtp_default_from:
 #smtp_default_to:
-zuul_revision: 2.5.1
+zuul_revision: 2.6.0
 zuul_git_source_repo: https://git.openstack.org/openstack-infra/zuul
 oscc_file_contents: |
   clouds:
@@ -112,5 +112,5 @@ mysql_nodepool_password: passw0rd
 nodepool_jenkins_target: jenkins1
 #jenkins_api_key:
 #jenkins_credentials_id:
-nodepool_revision: 0.3.1
+nodepool_revision: 0.5.0
 nodepool_git_source_repo: https://git.openstack.org/openstack-infra/nodepool
