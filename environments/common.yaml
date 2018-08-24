@@ -13,8 +13,8 @@ project_config_repo: https://github.com/lenovo-lxca-ci/project-config-xclarity.g
 jenkins_version: 2.107
 #jenkins_version: 1.651
 jenkins_vhost_name: u16-ci
-jenkins_username: jenkins-test
-#jenkins_password:
+jenkins_username: admin
+jenkins_password: 3679e5b3fe574b81914e69adc73b77b8
 jenkins_ssh_private_key: |
   -----BEGIN RSA PRIVATE KEY-----
   MIIEpAIBAAKCAQEA2elvYvIWzmhC3C8IEhDMBwRxjTEfU88iNKvnWnx0q2mgR4lu
