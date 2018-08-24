@@ -10,7 +10,7 @@ project_config_repo: https://github.com/lenovo-lxca-ci/project-config-xclarity.g
 # untrusted access to Jenkins.
 # see SECURITY-170 in:
 # "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2016-05-11"
-jenkins_version: 2.111
+jenkins_version: 2.7
 #jenkins_version: 1.651
 jenkins_vhost_name: u16-ci
 #jenkins_username: jenkins
